@@ -22,7 +22,7 @@
             <input type="text" v-model="info.name" style="left: 766px; top: 270px;">
         </div>
         <div class="form-control">
-            <input type="tel" maxlength='10' v-model.phone="info.tel" style="left: 766px; top: 362px; ">
+            <input type="tel" maxlength='10' v-model.number="info.phone" style="left: 766px; top: 362px; ">
         </div>
         <div class="form-control">
             <input type="text" v-model="info.email" style="left: 766px; top: 448px;">
