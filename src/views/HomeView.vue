@@ -1,5 +1,5 @@
 <template>
-  <section class="background">
+  <section class="background_2">
     <img style="width: 224px; height: 226px; left: 153px; top: 20px; position: absolute; border-radius: 21px" src="https://i.pinimg.com/750x/46/e4/20/46e420eaa30a38cefdef83e4cd6bb138.jpg" />
     <div style="width: 794px; height: 159px; left: 520px; top: 350px; position: absolute; background: rgba(255, 255, 255, 0.60)"></div>
     <div style="width: 431px; height: 105px; left: 680px; top: 200px; position: absolute; background: rgba(31.64, 173.39, 45.82, 0.39)"></div>
@@ -13,7 +13,7 @@
   </button>
 </template>
 <style lang="scss">
-.background{
+.background_2{
   width: 100%;
   height: 100vh;
   background-image: url('https://images.squarespace-cdn.com/content/v1/62946d69b7bbaa222ea1c0e1/eb01f1e1-eef1-4481-ad01-f08ccd0d0262/Special%2BNurse.jpg');

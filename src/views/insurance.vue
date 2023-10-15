@@ -1,6 +1,8 @@
 <template>
-    <section>
-    <div style="width: 349px; height: 53px; left: 544px; top: 744px; position: absolute"><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 800; word-wrap: break-word">ประกันสุขภาพ<br/></span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">จุดเด่นประกัน<br/><br/></span></div>
+    <section class="background">
+    </section>
+    <body>
+      <div style="width: 349px; height: 53px; left: 544px; top: 744px; position: absolute"><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 800; word-wrap: break-word">ประกันสุขภาพ<br/></span><span style="color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">จุดเด่นประกัน<br/><br/></span></div>
     <div style="width: 180px; height: 137px; left: 558px; top: 842px; position: absolute; background: #83DCF9"></div>
     <div style="width: 180px; height: 137px; left: 768px; top: 842px; position: absolute; background: #83DCF9"></div>
     <div style="width: 180px; height: 137px; left: 978px; top: 842px; position: absolute; background: #83DCF9"></div>
@@ -99,5 +101,19 @@
         </router-link>
       </button>
       <div style="width: 1920px; height: 182px; left: 0px; top: 6137px; position: absolute; background: #83DCF9"></div>
-    </section>
+    </body>
 </template>
+<style>
+.background{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image:none;
+  background-color: white;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+</style>

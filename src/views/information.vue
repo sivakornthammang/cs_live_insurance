@@ -12,7 +12,7 @@
     <button style="width: 168px; height: 44px; left: 760px; top: 637px; position: absolute; background: #ff6262; border-radius: 9px; text-align: center; color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">
         <router-link to="/">ย้อนกลับ</router-link>
     </button>
-    <button style="width: 168px; height: 44px; left: 948px; top: 637px; position: absolute; background: #6EFF62; border-radius: 9px; text-align: center; color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+    <button type="submit" value="submit" style="width: 168px; height: 44px; left: 948px; top: 637px; position: absolute; background: #6EFF62; border-radius: 9px; text-align: center; color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">
         <router-link to="/home">ลงทะเบียน</router-link>
     </button>
     <div style="width: 1920px; height: 72px; left: 0px; top: 0px; position: absolute; background: #83DCF9"></div>
@@ -22,7 +22,7 @@
             <input type="text" v-model="info.name" style="left: 766px; top: 270px;">
         </div>
         <div class="form-control">
-            <input type="text" v-model="info.tol" style="left: 766px; top: 362px;">
+            <input type="tel" maxlength='10' v-model.phone="info.tel" style="left: 766px; top: 362px; ">
         </div>
         <div class="form-control">
             <input type="text" v-model="info.email" style="left: 766px; top: 448px;">
@@ -34,7 +34,6 @@
                 <option value="travel">ประกันเดินทาง</option>
                 <option value="car">ประกันรถยนต์</option>
                 <option value="home">ประกันอัคคีภัย</option>
-                <option value="pets">ประกันสัตว์เลี้ยง</option>
             </select>
         </div>
     </form>
@@ -46,12 +45,17 @@ export default{
         return{
             info:{
                 name:"",
-                tol:"",
+                phone:"",
                 email:"",
                 insurance:""
             }
         }
+    },
+    methods: {
+    async submit() {
+      this.$emit('submit', this.form)
     }
+  }
 }
 
 </script>
